@@ -1,0 +1,1310 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# FOR LOOPS"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0 Mohammed Shoaib\n",
+      "1 Mohammed Shoaib\n",
+      "2 Mohammed Shoaib\n",
+      "3 Mohammed Shoaib\n",
+      "4 Mohammed Shoaib\n",
+      "5 Mohammed Shoaib\n",
+      "6 Mohammed Shoaib\n",
+      "7 Mohammed Shoaib\n",
+      "8 Mohammed Shoaib\n",
+      "9 Mohammed Shoaib\n"
+     ]
+    }
+   ],
+   "source": [
+    "for a in range(10):\n",
+    "    print(a,\"Mohammed Shoaib\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "for number in range(10):\n",
+    "    print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "for number in range(1,10):\n",
+    "    print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "3\n",
+      "5\n",
+      "7\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "for number in range(1,10,2):\n",
+    "    print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "4\n",
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "for number in range(1,10,3):\n",
+    "    print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n",
+      "8\n",
+      "6\n",
+      "4\n",
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "for number in range(10,1,-2):\n",
+    "    print(number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "cities=['karachi','Multan','lahore']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The city under consideration is:karachi\n",
+      "The city under consideration is:Multan\n",
+      "The city under consideration is:lahore\n"
+     ]
+    }
+   ],
+   "source": [
+    "for city in cities:\n",
+    "    print(f\"The city under consideration is:{city}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "11\n",
+      "22\n",
+      "33\n",
+      "44\n",
+      "55\n",
+      "66\n"
+     ]
+    }
+   ],
+   "source": [
+    "for num in [11,22,33,44,55,66]:\n",
+    "    print(num)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Pakistan\n",
+      "America\n"
+     ]
+    }
+   ],
+   "source": [
+    "country=\"Pakistan\",\"America\"\n",
+    "for char in country:\n",
+    "    print(char)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# #For loops Break and continue"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "for number in range(10):\n",
+    "    if number%3==1:\n",
+    "        break\n",
+    "    print(number)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for number in range(10):\n",
+    "    if number%3==0:\n",
+    "        break\n",
+    "    print(number)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "for number in range(10):\n",
+    "    if number%3!=0:\n",
+    "        break\n",
+    "    print(number)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n",
+      "7\n",
+      "11\n"
+     ]
+    }
+   ],
+   "source": [
+    "for number in [5,7,11,90]:\n",
+    "    if number%2==0:\n",
+    "        break\n",
+    "    print(number)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "for num in range(10):\n",
+    "    if num==7:\n",
+    "        continue\n",
+    "    print(num)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "5\n",
+      "6\n",
+      "8\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "for num in range(10):\n",
+    "    if num==7 or num==4:\n",
+    "        continue\n",
+    "    print(num)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Nested For Loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Inner Loops Begins\n",
+      "0 C\n",
+      "0 h\n",
+      "0 i\n",
+      "0 n\n",
+      "0 a\n",
+      "Inner Loops Begins\n",
+      "1 C\n",
+      "1 h\n",
+      "1 i\n",
+      "1 n\n",
+      "1 a\n",
+      "Inner Loops Begins\n",
+      "2 C\n",
+      "2 h\n",
+      "2 i\n",
+      "2 n\n",
+      "2 a\n",
+      "Inner Loops Begins\n",
+      "3 C\n",
+      "3 h\n",
+      "3 i\n",
+      "3 n\n",
+      "3 a\n",
+      "Inner Loops Begins\n",
+      "4 C\n",
+      "4 h\n",
+      "4 i\n",
+      "4 n\n",
+      "4 a\n"
+     ]
+    }
+   ],
+   "source": [
+    "for a in range(5):\n",
+    "    print(\"Inner Loops Begins\")\n",
+    "    for char in \"China\":\n",
+    "        print(a, char)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter Table Number5\n",
+      "5 * 1 =5\n",
+      "5 * 2 =10\n",
+      "5 * 3 =15\n",
+      "5 * 4 =20\n",
+      "5 * 5 =25\n",
+      "5 * 6 =30\n",
+      "5 * 7 =35\n",
+      "5 * 8 =40\n",
+      "5 * 9 =45\n",
+      "5 * 10 =50\n"
+     ]
+    }
+   ],
+   "source": [
+    "tablenumber=int(input(\"Enter Table Number\"))\n",
+    "for a in range(1,11):\n",
+    "    print(f\"{tablenumber} * {a} ={tablenumber*a}\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the range of table5\n",
+      "5 * 1 =5\n",
+      "5 * 2 =5\n",
+      "5 * 3 =5\n",
+      "5 * 4 =5\n",
+      "5 * 5 =5\n",
+      "5 * 1 =10\n",
+      "5 * 2 =10\n",
+      "5 * 3 =10\n",
+      "5 * 4 =10\n",
+      "5 * 5 =10\n",
+      "5 * 1 =15\n",
+      "5 * 2 =15\n",
+      "5 * 3 =15\n",
+      "5 * 4 =15\n",
+      "5 * 5 =15\n",
+      "5 * 1 =20\n",
+      "5 * 2 =20\n",
+      "5 * 3 =20\n",
+      "5 * 4 =20\n",
+      "5 * 5 =20\n",
+      "5 * 1 =25\n",
+      "5 * 2 =25\n",
+      "5 * 3 =25\n",
+      "5 * 4 =25\n",
+      "5 * 5 =25\n",
+      "5 * 1 =30\n",
+      "5 * 2 =30\n",
+      "5 * 3 =30\n",
+      "5 * 4 =30\n",
+      "5 * 5 =30\n",
+      "5 * 1 =35\n",
+      "5 * 2 =35\n",
+      "5 * 3 =35\n",
+      "5 * 4 =35\n",
+      "5 * 5 =35\n",
+      "5 * 1 =40\n",
+      "5 * 2 =40\n",
+      "5 * 3 =40\n",
+      "5 * 4 =40\n",
+      "5 * 5 =40\n",
+      "5 * 1 =45\n",
+      "5 * 2 =45\n",
+      "5 * 3 =45\n",
+      "5 * 4 =45\n",
+      "5 * 5 =45\n"
+     ]
+    }
+   ],
+   "source": [
+    "tables=int(input(\"Enter the range of table\"))\n",
+    "for a in range(1,10):\n",
+    "    for table in range(1,tables+1):\n",
+    "        print(f\"{tables} * {table} ={tables*a}\")\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter the range of table5\n",
+      "2 * 1 =2\n",
+      "2 * 2 =4\n",
+      "2 * 3 =6\n",
+      "2 * 4 =8\n",
+      "2 * 5 =10\n",
+      "2 * 6 =12\n",
+      "2 * 7 =14\n",
+      "2 * 8 =16\n",
+      "2 * 9 =18\n",
+      "2 * 10 =20\n",
+      "3 * 1 =3\n",
+      "3 * 2 =6\n",
+      "3 * 3 =9\n",
+      "3 * 4 =12\n",
+      "3 * 5 =15\n",
+      "3 * 6 =18\n",
+      "3 * 7 =21\n",
+      "3 * 8 =24\n",
+      "3 * 9 =27\n",
+      "3 * 10 =30\n",
+      "4 * 1 =4\n",
+      "4 * 2 =8\n",
+      "4 * 3 =12\n",
+      "4 * 4 =16\n",
+      "4 * 5 =20\n",
+      "4 * 6 =24\n",
+      "4 * 7 =28\n",
+      "4 * 8 =32\n",
+      "4 * 9 =36\n",
+      "4 * 10 =40\n",
+      "5 * 1 =5\n",
+      "5 * 2 =10\n",
+      "5 * 3 =15\n",
+      "5 * 4 =20\n",
+      "5 * 5 =25\n",
+      "5 * 6 =30\n",
+      "5 * 7 =35\n",
+      "5 * 8 =40\n",
+      "5 * 9 =45\n",
+      "5 * 10 =50\n"
+     ]
+    }
+   ],
+   "source": [
+    "tables= int(input(\"Enter the range of table\"))\n",
+    "for table in range(2,tables+1):\n",
+    "    for num in range(1,11):\n",
+    "        print(f\"{table} * {num} ={table*num}\")\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# TYPE CASTING"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter Somethinghello\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "str"
+      ]
+     },
+     "execution_count": 40,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "userinput=input(\"Enter Something\")\n",
+    "type(userinput)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter Something40\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "userinput=int(input(\"Enter Something\"))\n",
+    "type(userinput)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6.0"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "float(6)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#  Changing case pf String"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "str"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name=\"paskitan\"\n",
+    "type(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'PASKITAN'"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.upper()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'paskitan'"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.lower()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Paskitan'"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.title()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# DICTIONARY"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#mydictonary={key:value,key:value,key:value}\n",
+    "mydic={\"Name\":\"Mohammed Shoaib\",\"age\":20,\"Gender\":\"Male\"}\n",
+    "len(mydic)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Adding a new key in Existing Dictinary"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mydic[\"email\"]=\"abc@gmail.com\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Name': 'Mohammed Shoaib',\n",
+       " 'age': 20,\n",
+       " 'Gender': 'Male',\n",
+       " 'email': 'abc@gmail.com'}"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mydic"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Mohammed Shoaib\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(mydic['Name'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "dict"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    " type(mydic)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# ACCESS A KEY VALUE"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "20"
+      ]
+     },
+     "execution_count": 54,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mydic[\"age\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'abc@gmail.com'"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mydic[\"email\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Mohammed Shoaib'"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mydic[\"Name\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "newdic={1:\"Shoaib\",2:\"Khan\"}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Shoaib'"
+      ]
+     },
+     "execution_count": 58,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "newdic[1]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# DELETING A KEY"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "del newdic[1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{2: 'Khan'}"
+      ]
+     },
+     "execution_count": 60,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "newdic"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Update a key value"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Name': 'Mohammed Shoaib',\n",
+       " 'age': 20,\n",
+       " 'Gender': 'Male',\n",
+       " 'email': 'abc@gmail.com'}"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mydic"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "mydic[\"email\"]=\"shoaibbilal@gmail.com\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'Name': 'Mohammed Shoaib',\n",
+       " 'age': 20,\n",
+       " 'Gender': 'Male',\n",
+       " 'email': 'shoaibbilal@gmail.com'}"
+      ]
+     },
+     "execution_count": 63,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "mydic"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    " adic={1:100,2:200,3:300,1:400,4:400}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{1: 400, 2: 200, 3: 300, 4: 400}"
+      ]
+     },
+     "execution_count": 67,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "adic"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 68,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "1 in adic"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 69,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\"age\" in mydic"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Name\n",
+      "age\n",
+      "Gender\n",
+      "email\n",
+      "Mohammed Shoaib\n",
+      "20\n",
+      "Male\n",
+      "shoaibbilal@gmail.com\n"
+     ]
+    }
+   ],
+   "source": [
+    "\n",
+    "for key in mydic.keys():\n",
+    "    print(key)\n",
+    "for value in mydic.values():\n",
+    "    print(value)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Name : Mohammed Shoaib\n",
+      "age : 20\n",
+      "Gender : Male\n",
+      "email : shoaibbilal@gmail.com\n"
+     ]
+    }
+   ],
+   "source": [
+    "for key,value in mydic.items():\n",
+    "    print(key,\":\",value)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# creting list of dictonaries"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-81-cbd3f8cdbfef>, line 2)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-81-cbd3f8cdbfef>\"\u001b[1;36m, line \u001b[1;32m2\u001b[0m\n\u001b[1;33m    mydic.append{{\"name\":\"shoaib\",\"Class\":\"Python\",Age:21}}\u001b[0m\n\u001b[1;37m                ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "mydic=[]\n",
+    "mydic.append{{\"Name\":\"shoaib\",\"Class\":\"Python\",Age:21}}"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Creating a dictonary that holds a list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 83,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "employee={'Name':'Shoaib','childname':['Bilal','Usman']}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Bilal\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(employee['childname'][0])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Usman\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(employee['childname'][1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "details={'Name':'Shoaib','Childname':{'Humairah':{'Age':10,'Class':6},'Abdul Rahman':{'Age':8,'Class':3}}}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'Age': 10, 'Class': 6}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(details['Childname']['Humairah'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "{'Age': 8, 'Class': 3}\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(details['Childname']['Abdul Rahman'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
